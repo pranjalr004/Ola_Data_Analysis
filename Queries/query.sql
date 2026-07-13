@@ -1,5 +1,5 @@
 -- 1. Retrieve all successful bookings.
-select * from bookings where Booking_Status = 'Success';
+select * from bookings where Booking_status='Success';
 select * from bookings;
 -- 2. Find the average ride distance for each vehicle type:
 -- 3. Get the total number of cancelled rides by customers:
