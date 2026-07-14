@@ -18,6 +18,9 @@ order by total_rides desc limit 5;
 select * from Top_5_Customers;
 
 -- 5. Get the number of rides cancelled by drivers due to personal and car-related issues:
+
+select count(*) from bookings where canceled_rides_by_driver='Personal & Car related issue';
+
 -- 6. Find the maximum and minimum driver ratings for Prime Sedan bookings:
 -- 7. Retrieve all rides where payment was made using UPI:
 -- 8. Find the average customer rating per vehicle type:
