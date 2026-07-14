@@ -31,5 +31,8 @@ select * from bookings;
 select * from bookings where payment_method='UPI';
 
 -- 8. Find the average customer rating per vehicle type:
+
+select vehicle_type,avg(Customer_rating) as avg_customer_rating from bookings GROUP BY vehicle_type;
+
 -- 9. Calculate the total booking value of rides completed successfully:
 -- 10. List all incomplete rides along with the reason:
