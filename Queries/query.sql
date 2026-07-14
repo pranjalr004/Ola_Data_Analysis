@@ -40,3 +40,7 @@ select sum(booking_value) as total_successful_value from bookings WHERE
 booking_status='Success';
 
 -- 10. List all incomplete rides along with the reason:
+
+select booking_id,incomplete_rides_reason from bookings WHERE
+incomplete_rides='Yes';
+select * from bookings;
