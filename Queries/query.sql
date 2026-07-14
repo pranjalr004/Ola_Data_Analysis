@@ -27,6 +27,9 @@ select MAX(Driver_Ratings) as max_rating,min(Driver_Ratings) as min_rating from 
 select * from bookings;
 
 -- 7. Retrieve all rides where payment was made using UPI:
+
+select * from bookings where payment_method='UPI';
+
 -- 8. Find the average customer rating per vehicle type:
 -- 9. Calculate the total booking value of rides completed successfully:
 -- 10. List all incomplete rides along with the reason:
